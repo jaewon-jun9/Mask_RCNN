@@ -187,7 +187,7 @@ If you use Docker, the code has been verified to work on
 3. Run setup from the repository root directory
     ```bash
     python3 setup.py install
-    ``` 
+    ```
 3. Download pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page](https://github.com/matterport/Mask_RCNN/releases).
 4. (Optional) To train or test on MS COCO install `pycocotools` from one of these repos. They are forks of the original pycocotools with fixes for Python3 and Windows (the official repo doesn't seem to be active anymore).
 
@@ -239,3 +239,24 @@ A computer vision class project by HU Shiyu to apply the color pop effect on peo
 
 ### [GRASS GIS Addon](https://github.com/ctu-geoforall-lab/i.ann.maskrcnn) to generate vector masks from geospatial imagery. Based on a [Master's thesis](https://github.com/ctu-geoforall-lab-projects/dp-pesek-2018) by Ondřej Pešek.
 ![GRASS GIS Image](assets/project_grass_gis.png)
+
+
+
+TF VER TO 2
+
+Hey, I've tested the official upgrade command.
+
+First I was in the project folder, then I
+
+```
+cd ..
+```
+
+Since I don't need another backup, I use the following command, according to the help instruction.
+
+```
+tf_upgrade_v2 --intree Mask_RCNN --inplace --reportfile report.txt
+```
+
+Mask_RCNN is where I clone the whole repo.
+And it works.
